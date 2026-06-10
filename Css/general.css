@@ -14,22 +14,30 @@
   --stone-600: hsl(30, 10%, 34%);
   --stone-900: hsl(24, 5%, 18%);
   --brown-800: hsl(14, 45%, 36%);
-  --rose-800: hsl(332, 51%, 32%);
+  --rose-800: hsl(332, 41%, 43%);
   --rose-50: hsl(330, 100%, 98%);
 }
 
 body {
   font-family: "Outfit", sans-serif;
-  font-size: 16px; /* الحجم اللي طالبه في الـ Style Guide */
+  font-size: 15px; /* الحجم اللي طالبه في الـ Style Guide */
   font-weight: 400; /* الوزن الافتراضي للبرجرافات */
   color: var(--stone-900); /* غالباً ده بيكون لون النص الأساسي */
   background-color: var(--stone-100); /* لون الخلفية الافتراضي المتوقع */
+  height: 100dvh;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   color: var(--brown-800); /* أو الـ Stone 900 حسب شكل التصميم قدامك */
+}
+
+h2,
+h3,
+h4 {
+  font-size: 22px;
 }
