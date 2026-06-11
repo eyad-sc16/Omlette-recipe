@@ -1,2 +1,17 @@
 @media (max-width: 480px) {
+  .hero-section {
+    padding: 0;
+  }
+
+  .main-container {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 0;
+  }
+  .image-dev {
+    padding: 0;
+  }
+}
+.recipe {
+  padding: 0 2rem 2rem 2rem;
 }

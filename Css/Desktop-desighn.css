@@ -11,7 +11,6 @@ main,
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 2.3rem;
   background-color: var(--white);
   width: 45%;
   min-width: 30rem;
@@ -23,6 +22,7 @@ main,
 .image-dev {
   height: fit-content;
   width: 100%;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .image-dev img {
@@ -35,41 +35,57 @@ main,
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 0.5rem 2rem 2rem 2rem;
 }
 
 .preparation-box {
   display: flex;
   flex-direction: column;
-  padding: 0.6rem 0.6rem;
+  padding: 0.6rem 1rem;
   width: 100%;
   background: var(--rose-50);
   line-height: 1.6rem;
   border-radius: 1rem;
 }
+
+.preparation-box ul li::marker {
+  font-size: 10px;
+  color: var(--rose-800);
+}
+
 .preparation-box .preparation-box-title {
   font-weight: 600;
   color: var(--rose-800);
   font-size: 15px;
 }
-.boxes-content p {
+
+.boxes-content p,
+.preparation-box ul p {
   margin-left: 0.88rem;
   font-size: 14px;
 }
 
-.preparation-description,
-.ingredients-content {
-  position: relative;
-  left: 2rem;
+.boxes-content ul li::marker {
+  font-size: 10px;
+  color: var(--brown-800);
 }
+
+.boxes-content ol li::marker {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.preparation-description {
+  position: relative;
+  left: 1.5rem;
+}
+
 .recipe .ingredients-box {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   padding-top: 0;
-}
-.boxes-content {
-  position: relative;
-  left: 1.1rem;
 }
 
 .boxes {
@@ -80,11 +96,59 @@ main,
   border-bottom: 0.06rem solid rgba(128, 128, 128, 0.5);
   line-height: 1.8rem;
 }
+.boxes-content {
+  position: relative;
+  left: 1.1rem;
+}
+
+.instractions-content {
+  line-height: 1.5rem;
+}
 
 .instractions-content p {
   margin-bottom: 0.5rem;
 }
 
-.instractions-content {
-  line-height: 1.5rem;
+.nutrition-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nutrition-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-content .inner-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 45%;
+  border-top: 0.055rem solid rgba(128, 128, 128, 0.5);
+  padding: 0.7rem;
+  font-size: 13px;
+}
+.item-box {
+  position: relative;
+  width: 50px;
+  left: 1rem;
+}
+
+.info {
+  text-align: center;
+  left: 2rem;
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.nutrition-content .info-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100px;
+}
+
+.nutrition-content .calories-content {
+  border-top: none;
 }
