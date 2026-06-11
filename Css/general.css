@@ -20,9 +20,9 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  font-size: 15px; /* الحجم اللي طالبه في الـ Style Guide */
-  font-weight: 400; /* الوزن الافتراضي للبرجرافات */
-  color: var(--stone-900); /* غالباً ده بيكون لون النص الأساسي */
+  font-size: 15px; /* الحجم المطلوب في الـ Style Guide */
+  font-weight: 400; /* الوزن الافتراضي للفقرات */
+  color: var(--stone-900); /* غالبا ده لون النص الأساسي */
   background-color: var(--stone-100); /* لون الخلفية الافتراضي المتوقع */
   height: 100dvh;
 }
@@ -33,7 +33,7 @@ h3,
 h4 {
   font-family: "Young Serif", serif;
   font-weight: 400;
-  color: var(--brown-800); /* أو الـ Stone 900 حسب شكل التصميم قدامك */
+  color: var(--brown-800); /* أو Stone 900 حسب شكل التصميم قدامك */
 }
 
 h2,

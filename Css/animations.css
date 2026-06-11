@@ -1,0 +1,47 @@
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1.3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2.125rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1.3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.image-dev {
+  animation: fadeInUp 0.7s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4 {
+  animation: fadeInLeft 0.5s ease-in;
+}
+.preparation-box,
+.boxes,
+.recipe-description,
+.nutrition-box {
+  animation: fadeInDown 1s ease-in;
+}
